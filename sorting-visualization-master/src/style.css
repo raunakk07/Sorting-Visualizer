@@ -1,0 +1,92 @@
+html, body {
+    height: 100%;
+    overflow: hidden;
+    font-size: 24px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 24, 27);
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#nav-bar {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 128px;
+    background-color: rgba(37, 109, 133, 0.8);
+    border: 2px groove white;
+    border-radius: 30px;
+}
+
+#container {
+    display: flex;
+    /* This centers our sketch horizontally. */
+    justify-content: center;
+
+    /* This centers our sketch vertically. */
+    align-items: center;
+}
+
+.nav-bar-button-item {
+    text-align: center;
+    /*text-decoration: none;*/
+    display: inline-block;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: rgba(90, 255, 231, 0.65);
+    color: black;
+    font-size: medium;
+    margin: 3px;
+    width: 85px;
+    padding: 7px;
+    border: 2px solid #00181b;
+    border-radius: 10px;
+}
+
+.nav-bar-button-item:hover {
+    background-color: rgba(37, 109, 133,0.5);
+    color: white;
+    box-shadow: 0 2px 12px rgba(255, 255,  255,  1);
+    border: 2px solid white;
+}
+
+.nav-bar-select {
+    background-color: rgb(184, 255, 244);
+    /* background-color: white; */
+    color: black;
+    /* border: 2px solid #555555; */
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px solid #00181b;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+.nav-bar-select:hover {
+    /* background-color: rgb(184, 255, 244); */
+    background-color: rgb(195, 247, 247);
+    color: #00181b;
+    box-shadow: 0 2px 8px rgba(255, 255,  255,  1);
+    border: 2px solid white;
+}
+
+.nav-bar-select:focus{
+    outline: none;
+}
+
+.nav-bar.nav-bar-select-item {
+    font-size: 22px;
+}
+
+.select-text {
+    color: white;
+    font-size: 22px;
+    margin: 10px;
+}
